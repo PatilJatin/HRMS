@@ -60,7 +60,7 @@ frappe.ready(function() {
     }
 
     async function getATSScore(resume_text, job_description) {
-       // const api_key = 'open-ai-key';
+       const api_key = 'open-ai-key';
         const response = await fetch('https://api.openai.com/v1/completions', {
             method: 'POST',
             headers: {
